@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl \
                     android.hardware.graphics.composer@2.1-impl \
                     android.hardware.graphics.composer@2.1-service
 
+PRODUCT_COPY_FILES += device/intel/project-celadon/caas/start_android_qcow2.sh:$(PRODUCT_OUT)/config/start_android_qcow2.sh
+PRODUCT_COPY_FILES += device/intel/project-celadon/caas/start_flash_usb.sh:$(PRODUCT_OUT)/config/start_flash_usb.sh
+PRODUCT_COPY_FILES += device/intel/project-celadon/caas/setup_host.sh:$(PRODUCT_OUT)/config/setup_host.sh
+
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/manifest.xml:vendor/manifest.xml
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/file_share.sh:$(TARGET_COPY_OUT_VENDOR)/bin/file_share.sh
 PRODUCT_COPY_FILES += vendor/intel/utils/LICENSE:$(PRODUCT_OUT)/LICENSE
