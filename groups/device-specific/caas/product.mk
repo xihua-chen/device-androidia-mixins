@@ -29,8 +29,6 @@ PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl \
 
 PRODUCT_COPY_FILES += device/intel/project-celadon/caas/start_android_qcow2.sh:$(PRODUCT_OUT)/config/start_android_qcow2.sh
 PRODUCT_COPY_FILES += device/intel/project-celadon/caas/start_flash_usb.sh:$(PRODUCT_OUT)/config/start_flash_usb.sh
-PRODUCT_COPY_FILES += device/intel/project-celadon/caas/auto_switch_pt_usb_vms.sh:$(PRODUCT_OUT)/config/auto_switch_pt_usb_vms.sh
-PRODUCT_COPY_FILES += device/intel/project-celadon/caas/findall.py:$(PRODUCT_OUT)/config/findall.py
 PRODUCT_COPY_FILES += device/intel/project-celadon/caas/setup_host.sh:$(PRODUCT_OUT)/config/setup_host.sh
 
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/manifest.xml:vendor/manifest.xml
