@@ -1,0 +1,15 @@
+service dhcp_eth0 /vendor/bin/dhcp_eth0.sh
+    class main
+    disabled
+    oneshot
+
+# switch adb over dbc as default
+on post-fs-data
+    start dhcp_eth0
+    write /sys/bus/pci/devices/0000:00:14.0/dbc enable
+    write /sys/bus/pci/devices/0000:00:15.0/dbc enable
+    write /sys/bus/pci/devices/0000:00:16.0/dbc enable
+    write /sys/bus/pci/devices/0000:39:00.0/dbc enable
+    stop adbd
+    start adbd
+
