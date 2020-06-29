@@ -3,9 +3,11 @@ service dhcp_eth0 /vendor/bin/dhcp_eth0.sh
     disabled
     oneshot
 
-# switch adb over dbc as default
+# switch adb over net
 on post-fs-data
     start dhcp_eth0
+    stop adbd
+    start adbd
 
 # switch adb over dwc
 on property:persist.vendor.sys.usb.adbover=dwc
