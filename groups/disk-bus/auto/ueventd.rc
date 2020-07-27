@@ -1,1 +1,1 @@
-/dev/block/pci/pci0000:00/0000:00:*/by-name/persistent   0660 system system
+/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/201e58fa-3a52-4910-b47d-705b3225db3c/host0/target0:0:0/0:0:0:0/block/sda/sda11 0660 system system
