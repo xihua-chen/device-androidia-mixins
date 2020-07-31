@@ -41,3 +41,9 @@ on post-fs
     insmod /vendor/lib/modules/asix.ko
     insmod /vendor/lib/modules/r8152.ko
     insmod /vendor/lib/modules/r8169.ko
+    insmod /vendor/lib/modules/virt_wifi.ko
+    insmod /vendor/lib/modules/hv_netvsc.ko
+    insmod /vendor/lib/modules/hv_balloon.ko
+    insmod /vendor/lib/modules/joydev.ko
+    insmod /vendor/lib/modules/hid_hyperv.ko
+    insmod /vendor/lib/modules/hv_utils.ko
