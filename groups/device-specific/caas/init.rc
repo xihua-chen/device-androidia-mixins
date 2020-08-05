@@ -44,8 +44,7 @@ on post-fs
     insmod /vendor/lib/modules/cfg80211.ko
     insmod /vendor/lib/modules/virt_wifi.ko
     insmod /vendor/lib/modules/hv_netvsc.ko
+    insmod /vendor/lib/modules/atkbd.ko
     insmod /vendor/lib/modules/hv_balloon.ko
     insmod /vendor/lib/modules/hid_hyperv.ko
     insmod /vendor/lib/modules/hv_utils.ko
-    insmod /vendor/lib/modules/atkbd.ko
-
