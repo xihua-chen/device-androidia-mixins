@@ -41,10 +41,12 @@ on post-fs
     insmod /vendor/lib/modules/asix.ko
     insmod /vendor/lib/modules/r8152.ko
     insmod /vendor/lib/modules/r8169.ko
+
+on post-fs-data
     insmod /vendor/lib/modules/cfg80211.ko
     insmod /vendor/lib/modules/virt_wifi.ko
     insmod /vendor/lib/modules/hv_netvsc.ko
-    insmod /vendor/lib/modules/atkbd.ko
     insmod /vendor/lib/modules/hv_balloon.ko
-    insmod /vendor/lib/modules/hid_hyperv.ko
     insmod /vendor/lib/modules/hv_utils.ko
+    insmod /vendor/lib/modules/hyperv-keyboard.ko
+    insmod /vendor/lib/modules/hid_hyperv.ko
