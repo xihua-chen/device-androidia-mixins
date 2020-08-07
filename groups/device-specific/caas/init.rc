@@ -49,4 +49,3 @@ on post-fs-data
     insmod /vendor/lib/modules/hv_balloon.ko
     insmod /vendor/lib/modules/hv_utils.ko
     insmod /vendor/lib/modules/hyperv-keyboard.ko
-    insmod /vendor/lib/modules/hid_hyperv.ko
