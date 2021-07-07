@@ -59,3 +59,6 @@ PRODUCT_COPY_FILES += device/intel/civ/host/vm-manager/scripts/guest_time_keepin
 PRODUCT_COPY_FILES += device/intel/civ/host/vm-manager/scripts/start_flash_usb.sh:$(PRODUCT_OUT)/scripts/start_flash_usb.sh
 PRODUCT_COPY_FILES += vendor/intel/fw/trusty-release-binaries/rpmb_dev:$(PRODUCT_OUT)/scripts/rpmb_dev
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/wakeup.py:$(PRODUCT_OUT)/scripts/wakeup.py
+PRODUCT_COPY_FILES += system/update_engine/scripts/update_device.py:$(PRODUCT_OUT)/scripts/update_device.py
+PRODUCT_COPY_FILES += $(call add-to-product-copy-files-if-exists,\
+                      system/update_engine/scripts/update_payload:$(PRODUCT_OUT)/scripts/update_payload)
