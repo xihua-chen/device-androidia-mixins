@@ -1,0 +1,12 @@
+# adb over ethernet
+on boot
+    setprop service.adb.tcp.port 5555
+
+service dhcp_eth0 /vendor/bin/dhcp_eth0.sh
+    class main
+    disabled
+    oneshot
+
+# switch adb over net
+on post-fs-data
+    start dhcp_eth0

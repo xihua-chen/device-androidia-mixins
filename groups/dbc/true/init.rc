@@ -13,3 +13,12 @@ on property:persist.vendor.sys.usb.adbover=dbc && property:sys.boot_completed=1
     write /sys/bus/pci/devices/0000:39:00.0/dbc enable
     stop adbd
     start adbd
+
+service dhcp_root_eth0 /vendor/bin/dhcp_eth0.sh
+    class main
+    disabled
+    oneshot
+
+# switch adb over dbc as default
+on post-fs-data
+    start dhcp_root_eth0
