@@ -24,6 +24,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := false
 {{/treble}}
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote64_32
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.kernel.qemu=1
 PRODUCT_COPY_FILES += system/core/rootdir/init.zygote64_32.rc:root/init.zygote64_32.rc
 
 BOARD_USE_64BIT_USERSPACE := true
