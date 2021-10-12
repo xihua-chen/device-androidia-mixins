@@ -27,6 +27,9 @@ function setupSof {
     sudo mkdir $LIB_FW
     sudo mkdir $LIB_TPLG
 
+    sudo cp "${SOF_WORK_DIR}sof-ehl-rt5660.tplg" $LIB_TPLG
+    sudo cp "${SOF_WORK_DIR}sof-ehl.ri" $LIB_FW
+
     rm -rf sof-bin
     git clone https://github.com/thesofproject/sof-bin -b stable-v1.4.2
     if [ ! -d "sof-bin" ]; then
