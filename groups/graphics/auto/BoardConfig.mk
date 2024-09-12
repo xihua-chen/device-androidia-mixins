@@ -2,7 +2,7 @@
 TARGET_USE_PRIVATE_LIBDRM := true
 LIBDRM_VER ?= intel
 
-BOARD_KERNEL_CMDLINE += vga=current i915.modeset=1 drm.atomic=1 i915.nuclear_pageflip=1 drm.vblankoffdelay=1 i915.fastboot=1
+BOARD_KERNEL_CMDLINE += vga=current i915.modeset=1 drm.atomic=1 i915.nuclear_pageflip=1 drm.vblankoffdelay=1 i915.fastboot=1 drm.drm_mode_prune_hlimit=1920 drm.drm_mode_prune_vlimit=1080
 {{^acrn-guest}}
 {{#enable_guc}}
 BOARD_KERNEL_CMDLINE += i915.enable_guc=1
